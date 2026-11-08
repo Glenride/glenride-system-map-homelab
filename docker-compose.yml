@@ -1,0 +1,15 @@
+services:
+  system-map:
+    build: .
+    container_name: glenride-system-map
+    ports:
+      - "8090:8000"
+    volumes:
+      - glenride-map-data:/data
+    environment:
+      - DATABASE_PATH=/data/system-map.db
+      - PORT=8000
+    restart: unless-stopped
+
+volumes:
+  glenride-map-data:

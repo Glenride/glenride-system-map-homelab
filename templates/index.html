@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Glenride System Map</title>
+<link rel="icon" href="/static/glenride-logo.png" type="image/png">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<a href="https://mission.dvaughnhouse.com" style="display:block;padding:10px 18px;background:#111;color:#e97451;font-weight:600;text-decoration:none;font-family:system-ui,sans-serif;font-size:14px">&larr; Mission Control</a>
+<header class="site-header">
+  <img class="brand-mark" src="/static/glenride-logo.png" alt="Glenride">
+  <div class="brand-text">
+    <h1>Glenride System Map</h1>
+    <p>The institute, working like it should — click any card to edit. Everything you type is saved.</p>
+  </div>
+</header>
+
+<nav class="tabs" role="tablist">
+  <button class="tab active" data-section="leadership" role="tab">Org Chart</button>
+  <button class="tab" data-section="departments" role="tab">Departments</button>
+  <button class="tab" data-section="budget" role="tab">Budget Cycle</button>
+  <button class="tab" data-section="structure" role="tab">Money &amp; Governance</button>
+</nav>
+
+<main id="board" aria-live="polite">
+  <p class="loading">Loading the map…</p>
+</main>
+
+<div id="toast" class="toast" hidden></div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
